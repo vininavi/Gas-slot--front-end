@@ -56,7 +56,7 @@ const Footer = () => {
                     <p>
                       <i className="fas fa-home mr-3"></i>
                       <span className="px-2">
-                        Pollachi, Coimbatore, Tamil Nadu
+                        Erode, Tamil Nadu
                       </span>
                     </p>
                   </Link>
