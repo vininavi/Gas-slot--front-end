@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import * as Yup from "yup";
 import signUpImg from "../assets/sign-up.png";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link} from "react-router-dom";
 
 const Register = () => {
   const [message, setMessage] = useState("");
@@ -150,15 +150,27 @@ const Register = () => {
                     className="text-danger"
                   />
                 </div>
-                <button
+                <div className="d-flex gap-5">
+                  <button
                   type="submit"
                   className="btn btn-primary btn-block mt-3"
-                  disabled={isSubmitting}
+                  
                 >
                   Sign Up
                 </button>
+
+                <Link
+                  type="submit"
+                  className="btn btn-outline-primary btn-block mt-3"
+                to="/sign-in"
+                >
+                  Login
+                </Link>
+                </div>
+                
               </Form>
             )}
+          
           </Formik>
           <h6>{message}</h6>
         </div>

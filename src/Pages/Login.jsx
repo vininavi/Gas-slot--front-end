@@ -2,7 +2,7 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import React, { useState } from "react";
 import * as Yup from "yup";
 import logInImg from "../assets/login.jpg";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link } from "react-router-dom";
 import axios from "axios";
 
 const Login = () => {
@@ -102,6 +102,9 @@ const Login = () => {
                     className="text-danger"
                   />
                 </div>
+                <p> Don't have a an account <Link to="/">
+                 Click here </Link>
+</p>
                 <button
                   type="submit"
                   className="btn btn-primary btn-block mt-3"
